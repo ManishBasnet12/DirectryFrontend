@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
     <link rel="stylesheet" href="../Style/style.css">
 </head>
 
@@ -75,10 +75,29 @@
                                     <a class="nav-link" href="importer.html"><i
                                             class="fa-solid fa-gauge-simple-high"></i> Importer</a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link" href="manufacture.html"><i
                                             class="fa-solid fa-gauge-simple-high"></i>
                                         Manufacture</a>
+                                </li> -->
+                                <li class=" nav-item accordion" id="manufacture">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <p class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#details-collapsefour"
+                                                aria-expanded="false" aria-controls="details-collapsefour">
+                                                <i class="fa-solid fa-cookie-bite"></i> Manufacture
+                                            </p>
+                                        </h2>
+                                        <div id="details-collapsefour" class="accordion-collapse collapse">
+                                            <div class="accordion-body d-flex flex-column">
+                                                <a class="nav-link" href="manufacturetable.html"> Manufacture Table</a>
+                                                <a class="nav-link" href="manufactureauthority.html">Manufacture
+                                                    Authority</a>
+                                                <a class="nav-link" href="capital.html">Capital</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="lab.html"><i class="fa-solid fa-gauge-simple-high"></i>
@@ -165,9 +184,11 @@
                                 <td>
                                     <div class="d-flex kit-action-com">
                                         <div class="action-btn-view">
-                                            <button>
-                                                View
-                                            </button>
+                                            <div class="action-btn-view">
+                                                <a href="viewcertifingagency.html">
+                                                    View
+                                                </a>
+                                            </div>
                                         </div>
                                         <div class="action-btn-pen">
                                             <button>
@@ -189,9 +210,11 @@
                                 <td>
                                     <div class="d-flex kit-action-com">
                                         <div class="action-btn-view">
-                                            <button>
-                                                View
-                                            </button>
+                                            <div class="action-btn-view">
+                                                <a href="viewcertifingagency.html">
+                                                    View
+                                                </a>
+                                            </div>
                                         </div>
                                         <div class="action-btn-pen">
                                             <button>
@@ -213,9 +236,11 @@
                                 <td>
                                     <div class="d-flex kit-action-com">
                                         <div class="action-btn-view">
-                                            <button>
-                                                View
-                                            </button>
+                                            <div class="action-btn-view">
+                                                <a href="viewcertifingagency.html">
+                                                    View
+                                                </a>
+                                            </div>
                                         </div>
                                         <div class="action-btn-pen">
                                             <button>

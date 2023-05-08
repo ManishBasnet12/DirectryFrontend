@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../Style/style.css">
 </head>
 
@@ -148,9 +149,30 @@
                             <label for="" class="form-label cm">Lab Name</label>
                             <input type="text" class="form-control cm" placeholder="Enter Lab Name">
                         </div>
-                        
+                        <div class="col-md-6">
+                            <label for="" class="form-label cm">Recognized Agency</label>
+                            <input type="text" class="form-control cm" placeholder="Enter Recognized Agency">
+                        </div>
+
                     </div>
-                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="" class="form-label cm">Website</label>
+                            <input type="text" class="form-control cm" placeholder="Enter Lab Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="" class="form-label cm"> Country</label>
+                            <select class="form-select kit-form-control mySelect" aria-label="Default select example">
+                                <option value="1" selected disabled>Select</option>
+                                <option value="2">India</option>
+                                <option value="3">Nepal</option>
+                                <option value="4">USA</option>
+                                <option value="5">China</option>
+                            </select>
+                        </div>
+
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Create</button>
 
                 </form>
@@ -162,6 +184,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="comodities.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.mySelect').select2();
+        });
+
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.multipleselect').select2({
+                closeOnSelect: false,
+                placeholder: 'Select'
+            });
+        });
+
+    </script>
 </body>
 
 </html>

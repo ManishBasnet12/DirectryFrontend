@@ -26,10 +26,29 @@
       </p>
     </div>
     <div class="db-user-profile">
-      <div class="me-5 notification-div"><i class="fa-solid fa-bell notification"></i></div>
-      <img src="../IMAGE/profile.jpg" alt="">
-      <p><span class="username">Username</span><br>user@gmail.com</p>
+      <div class="me-3 notification-div"><i class="fa-solid fa-bell notification"></i></div>
+
+      <div class="dropdown main">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          166209572
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Username</a></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+
+        </ul>
+      </div>
     </div>
+    <!-- <div class="dropdown main">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        1653847856209572
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Username</a></li>
+        <li><a class="dropdown-item" href="#">Logout</a></li>
+
+      </ul>
+    </div> -->
   </div>
 
   <div class="container-fluid">
@@ -52,44 +71,43 @@
                 </li>
                 <li class=" nav-item accordion" id="productdetails">
                   <div class="accordion-item">
-                      <h2 class="accordion-header">
-                          <p class="accordion-button collapsed" type="button"
-                              data-bs-toggle="collapse" data-bs-target="#details-collapseOne"
-                              aria-expanded="false" aria-controls="details-collapseOne">
-                              <img src="/IMAGE/details.png" alt=""> Product Details
-                          </p>
-                      </h2>
-                      <div id="details-collapseOne" class="accordion-collapse collapse">
-                          <div class="accordion-body d-flex flex-column">
-                              <a class="nav-link" href="producttype.html">Types</a>
-                              <a class="nav-link" href="productform.html">Form</a>
-                              <a class="nav-link" href="dose.html">Specified DOSE</a>
-                              <a class="nav-link" href="packsize.html">Size of Pack</a>
-                          </div>
+                    <h2 class="accordion-header">
+                      <p class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#details-collapseOne" aria-expanded="false" aria-controls="details-collapseOne">
+                        <img src="/IMAGE/details.png" alt=""> Product Details
+                      </p>
+                    </h2>
+                    <div id="details-collapseOne" class="accordion-collapse collapse">
+                      <div class="accordion-body d-flex flex-column">
+                        <a class="nav-link" href="producttype.html">Types</a>
+                        <a class="nav-link" href="productform.html">Form</a>
+                        <a class="nav-link" href="dose.html">Specified DOSE</a>
+                        <a class="nav-link" href="packsize.html">Size of Pack</a>
                       </div>
+                    </div>
                   </div>
-              </li>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="importer.html"><i class="fa-solid fa-file-import"></i> Importer</a>
                 </li>
                 <li class=" nav-item accordion" id="manufacture">
                   <div class="accordion-item">
-                      <h2 class="accordion-header">
-                          <p class="accordion-button collapsed" type="button"
-                              data-bs-toggle="collapse" data-bs-target="#details-collapsefour"
-                              aria-expanded="false" aria-controls="details-collapsefour">
-                              <i class="fa-solid fa-industry"></i>Manufacture
-                          </p>
-                      </h2>
-                      <div id="details-collapsefour" class="accordion-collapse collapse">
-                          <div class="accordion-body d-flex flex-column">
-                              <a class="nav-link" href="addmanufacture.html">Add Manufacture</a>
-                              <a class="nav-link" href="manufactureauthority.html">Manufacture Authority</a>
-                              <a class="nav-link" href="capital.html">Capital</a>
-                          </div>
+                    <h2 class="accordion-header">
+                      <p class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#details-collapsefour" aria-expanded="false"
+                        aria-controls="details-collapsefour">
+                        <i class="fa-solid fa-industry"></i>Manufacture
+                      </p>
+                    </h2>
+                    <div id="details-collapsefour" class="accordion-collapse collapse">
+                      <div class="accordion-body d-flex flex-column">
+                        <a class="nav-link" href="addmanufacture.html">Add Manufacture</a>
+                        <a class="nav-link" href="manufactureauthority.html">Manufacture Authority</a>
+                        <a class="nav-link" href="capital.html">Capital</a>
                       </div>
+                    </div>
                   </div>
-              </li>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="lab.html"><i class="fa-solid fa-vial"></i> Lab</a>
                 </li>
@@ -98,7 +116,8 @@
                     Certifing Agency</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="products.html"><img src="/IMAGE/product.png" style="width:25px" alt=""> Products </a>
+                  <a class="nav-link" href="products.html"><img class="icon-hov" src="/IMAGE/product.svg" style="width:25px" alt="">
+                    Products </a>
                 </li>
                 <li class="nav-item accordion" id="Createcertificate">
                   <div class="accordion-item">
@@ -106,7 +125,7 @@
                       <p class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#certificate-collapseTwo" aria-expanded="true"
                         aria-controls="certificate-collapseTwo">
-                       <img src="/IMAGE/certificate.png" alt=""> Create Certificate
+                        <img src="/IMAGE/certificate.png" alt=""> Create Certificate
                       </p>
                     </h2>
                     <div id="certificate-collapseTwo" class="accordion-collapse collapse ">
@@ -141,8 +160,11 @@
       </div>
       <div class="col-md-10 db-content">
         <div class="add-heading">
-        <h3 class="heading-cm">Add Product </h3>
-      </div>
+          <h3 class="heading-cm">Add Product </h3>
+        </div>
+        <div class="page-inside">
+          Application <span>> Add Product</span>
+        </div>
         <form action="" class="form-cm">
 
           <div class="row mb-2">

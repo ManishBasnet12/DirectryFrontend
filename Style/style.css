@@ -64,32 +64,110 @@ body {
 .bd-navbar {
     background: white;
     top: 100px;
-    height: calc(105vh - 100px);
+
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     padding: 10px;
-    position: fixed;
-    overflow-X: scroll;
-    width: 300px;
+
 }
 
-.bd-navbar::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+.bd-navbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
 }
 
-.bd-navbar::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #F5F5F5;
+.bd-navbar::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
 }
 
-.bd-navbar::-webkit-scrollbar-thumb
-{
-	background-color: #8c8c8c;
-	border: 2px solid #878787;
+.bd-navbar::-webkit-scrollbar-thumb {
+    background-color: #8c8c8c;
+    border: 2px solid #878787;
 }
 
+
+@media(min-width:768px) {
+    .bd-navbar {
+        height: calc(105vh - 100px);
+        position: fixed;
+        overflow-X: scroll;
+        width: 300px;
+    }
+
+    .db-content {
+        position: relative;
+    }
+
+    .table-row {
+        max-width: 90%;
+
+    }
+}
+
+
+@media (max-width:768px) {
+    .db-top-bar {
+        width: 100vw;
+    }
+
+    .db-lims-logo p {
+        font-size: 12px;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .dropdown.main button {
+        font-size: 14px;
+    }
+
+    .db-lims-logo .logo img {
+        width: 95px;
+    }
+
+    .bd-navbar {
+        position: sticky;
+        z-index: 1;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .db-user-profile{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: right; */
+        align-items: center;
+    }
+
+    .notification-div{
+        width: 20px!important;
+        height: 20px!important;
+    }
+
+    .notification{
+        font-size: 12px!important;
+    }
+    .dropdown.main{
+        margin: 0!important;
+    }
+}
+
+.dropdown.main {
+    margin-right: 30px;
+}
+
+.dropdown.main button {
+    background-color: transparent !important;
+    color: black;
+    border: transparent;
+}
+
+.dropdown.main button img {
+    margin-right: 15px;
+}
+
+.dropdown.main button:active {
+    color: black;
+}
 
 .notification-div {
     height: 40px;
@@ -99,12 +177,14 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    margin: 0!important;
+
 }
 
 .notification {
     font-size: 24px;
     color: #2260bf;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .db-navbar {
@@ -124,6 +204,12 @@ body {
 .db-navbar li .nav-link:hover {
     color: #2260bf !important;
 }
+
+.db-navbar li .nav-link:hover .icon-hov{
+    fill: #2260bf !important;
+}
+
+
 
 .db-navbar li .nav-link .fa-solid {
     margin-right: 8px;
@@ -148,12 +234,11 @@ body {
 }
 
 .db-content {
-    position: relative;
     left: 300px;
     /* top: 100px; */
     padding: 0;
-    z-index: -1;
-    
+    z-index: 0;
+
 }
 
 .row.main {
@@ -167,8 +252,8 @@ body {
     padding: 40px;
     margin-bottom: 50px;
     border-radius: 8px;
-    width: 80%;
-   
+    width: 90%;
+
     margin: auto;
     margin-bottom: 2rem;
 }
@@ -222,6 +307,10 @@ p.accordion-button {
     background: none !important;
 }
 
+p.accordion-button:hover {
+    color: #2260bf !important;
+}
+
 .accordion-body.d-flex.flex-column {
     display: flex;
     gap: .5rem;
@@ -237,6 +326,13 @@ p.accordion-button {
 }
 
 
+
+.page-inside {
+    margin: 0 5% 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color:#0e5cd9
+}
 
 .kit-action-com {
     justify-content: left;
@@ -371,7 +467,7 @@ span.select2-selection.select2-selection--multiple,
 .cm-row {
     width: 520px;
     margin: auto;
-    background-color: #eef1f5;
+    background-color: #ffffff;
     padding: 2em 1em;
     position: absolute;
     top: 50%;
@@ -390,7 +486,7 @@ span.select2-selection.select2-selection--multiple,
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 2.5rem;
-    border-bottom: 1px solid rgb(86, 86, 86);
+    border-bottom: 1px solid rgb(183, 183, 183);
 }
 
 .input-container {
@@ -399,7 +495,27 @@ span.select2-selection.select2-selection--multiple,
 
 .entry-form .form-control.cm {
     padding: 12px 40px !important;
-    margin: auto 12px;
+
+}
+
+.entry-form .re.form-control.cm {
+    padding: 12px 20px !important;
+    width: 94%;
+    margin: auto;
+}
+
+/* .entry-form .form-label.cm{
+    padding: 0;
+} */
+
+
+button.btn.btn-primary {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: Poppins;
+    font-weight: 400;
+    border-radius: 3px;
+    padding: 7px 15px;
 }
 
 .input-container .login-icon-left {
@@ -450,7 +566,7 @@ span.select2-selection.select2-selection--multiple,
 }
 
 .add-heading h3 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .add-heading {
@@ -478,7 +594,6 @@ span.select2-selection.select2-selection--multiple,
 
 .table-row {
     margin: 3rem auto;
-    max-width: 80%;
 
 }
 
@@ -667,13 +782,13 @@ tr {
     font-size: 20px
 }
 
-.div-highlight{
+.div-highlight {
     background-color: #b6b6b6;
     max-width: max-content;
     margin: auto;
 }
 
-.rep-heading.highlight{
+.rep-heading.highlight {
     border-bottom: 2px solid rgb(0, 0, 0);
     margin-bottom: 5px;
     margin-top: 2px;
@@ -760,7 +875,7 @@ tr {
 
 
 
-.rep-underline{
+.rep-underline {
     font-size: 18px;
     font-weight: 600;
     font-family: Noto Sans Devanagari;
@@ -768,7 +883,7 @@ tr {
     max-width: max-content;
 }
 
-.rep-underline-det{
+.rep-underline-det {
     font-size: 18px;
     font-weight: 600;
     font-family: Noto Sans Devanagari;
@@ -776,7 +891,7 @@ tr {
 }
 
 
-.rep-terms ul{
+.rep-terms ul {
     list-style-type: number;
     font-family: Noto Sans Devanagari;
     font-weight: 400;
