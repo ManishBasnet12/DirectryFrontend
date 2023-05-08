@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comodities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid db-top-bar">
+        <div class="db-lims-logo">
+            <div class="logo">
+                <img src="../IMAGE/np.png" alt="">
+            </div>
+            <p>Department of Food Technology and Quality Control<br>
+                Babarmahal,Kathmandu
+            </p>
+        </div>
+        <div class="db-user-profile">
+            <div class="me-5 notification-div"><i class="fa-solid fa-bell notification"></i></div>
+            <img src="../IMAGE/profile.jpg" alt="">
+            <p><span class="username">Username</span><br>user@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row main">
+            <div class="col-md-2 bd-navbar">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column db-navbar">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="addproduct.html"
+                                        id="add-sample"><i class="fa-solid fa-plus"></i> Add Product </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-gauge-simple-high"></i>
+                                        Dashboard</a>
+                                </li>
+                                <li class=" nav-item accordion" id="productdetails">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <p class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#details-collapseOne"
+                                                aria-expanded="false" aria-controls="details-collapseOne">
+                                                <i class="fa-solid fa-cookie-bite"></i> Product Details
+                                            </p>
+                                        </h2>
+                                        <div id="details-collapseOne" class="accordion-collapse collapse">
+                                            <div class="accordion-body d-flex flex-column">
+                                                <a class="nav-link" href="producttype.html">Types</a>
+                                                <a class="nav-link" href="productform.html">Form</a>
+                                                <a class="nav-link" href="dose.html">Specified DOSE</a>
+                                                <a class="nav-link" href="packsize.html">Size of Pack</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="importer.html"><i
+                                            class="fa-solid fa-gauge-simple-high"></i> Importer</a>
+                                </li>
+                               
+                                <li class=" nav-item accordion" id="manufacture">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <p class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#details-collapsefour"
+                                                aria-expanded="false" aria-controls="details-collapsefour">
+                                                <i class="fa-solid fa-cookie-bite"></i> Manufacture
+                                            </p>
+                                        </h2>
+                                        <div id="details-collapsefour" class="accordion-collapse collapse">
+                                            <div class="accordion-body d-flex flex-column">
+                                                <a class="nav-link" href="manufacturetable.html"> Manufacture Table</a>
+                                                <a class="nav-link" href="manufactureauthority.html">Manufacture
+                                                    Authority</a>
+                                                <a class="nav-link" href="capital.html">Capital</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="lab.html"><i class="fa-solid fa-gauge-simple-high"></i>
+                                        Lab</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="certifingagency.html"><i
+                                            class="fa-solid fa-gauge-simple-high"></i>
+                                        Certifing Agency</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html"><i class="fa-solid fa-vial"></i>Products
+                                    </a>
+                                </li>
+                                <li class="nav-item accordion" id="Createcertificate">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <p class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#certificate-collapseTwo"
+                                                aria-expanded="true" aria-controls="certificate-collapseTwo">
+                                                <i class="fa-solid fa-cookie-bite"></i> Create Certificate
+                                            </p>
+                                        </h2>
+                                        <div id="certificate-collapseTwo" class="accordion-collapse collapse ">
+                                            <div class="accordion-body d-flex flex-column">
+                                                <a class="nav-link" href="registrationcertificate.html">Registration
+                                                    Certificate</a>
+                                                <a class="nav-link" href="renewcertificate.html">Renew Certificate</a>
+                                                <a class="nav-link" href="tippaninewprodductcertificate.html">Tippani
+                                                    New Product
+                                                    Certificate</a>
+                                                <a class="nav-link" href="tippanirenewcertificate.html">Tippani Renew
+                                                    Certificate</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item accordion" id="User">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <p class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#user-collapseThree"
+                                                aria-expanded="false" aria-controls="user-collapseThree">
+                                                <i class="fa-solid fa-user"></i>User
+                                            </p>
+                                        </h2>
+                                        <div id="user-collapseThree" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="nav-link" href="adduser.html">Add User</a>
+                                                <a class="nav-link" href="usertable.html">User Table</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-md-10 db-content">
+                <div class="table-row">
+                    <h3 class="view-title"> Dose</h3>
+                    <div class="view-page">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Dose Name</h4>
+                                <p>Lorem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>
