@@ -12,6 +12,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="../Style/style.css">
 </head>
 
@@ -67,14 +70,19 @@
                       class="fa-solid fa-plus"></i> Add Product </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><img src="/IMAGE/dashboard.png" alt=""> Dashboard</a>
+                  <a class="nav-link" href="#">
+                    <span class="material-symbols-outlined">
+                    dashboard
+                    </span> Dashboard</a>
                 </li>
                 <li class=" nav-item accordion" id="productdetails">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <p class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#details-collapseOne" aria-expanded="false" aria-controls="details-collapseOne">
-                        <img src="/IMAGE/details.png" alt=""> Product Details
+                        <span class="material-symbols-outlined">
+                          page_info
+                          </span> Product Details
                       </p>
                     </h2>
                     <div id="details-collapseOne" class="accordion-collapse collapse">
@@ -88,7 +96,9 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="importer.html"><i class="fa-solid fa-file-import"></i> Importer</a>
+                  <a class="nav-link" href="importer.html"><span class="material-symbols-outlined">
+                    label_important
+                    </span> Importer</a>
                 </li>
                 <li class=" nav-item accordion" id="manufacture">
                   <div class="accordion-item">
@@ -96,7 +106,9 @@
                       <p class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#details-collapsefour" aria-expanded="false"
                         aria-controls="details-collapsefour">
-                        <i class="fa-solid fa-industry"></i>Manufacture
+                        <span class="material-symbols-outlined">
+                          factory
+                          </span>Manufacture
                       </p>
                     </h2>
                     <div id="details-collapsefour" class="accordion-collapse collapse">
@@ -109,14 +121,20 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="lab.html"><i class="fa-solid fa-vial"></i> Lab</a>
+                  <a class="nav-link" href="lab.html"><span class="material-symbols-outlined">
+                    science
+                    </span> Lab</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="certifingagency.html"><i class="fa-solid fa-stamp"></i>
+                  <a class="nav-link" href="certifingagency.html"><span class="material-symbols-outlined">
+                    verified_user
+                    </span>
                     Certifing Agency</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="products.html"><img class="icon-hov" src="/IMAGE/product.svg" style="width:25px" alt="">
+                  <a class="nav-link" href="products.html"><span class="material-symbols-outlined">
+                    category
+                    </span>
                     Products </a>
                 </li>
                 <li class="nav-item accordion" id="Createcertificate">
@@ -125,7 +143,9 @@
                       <p class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#certificate-collapseTwo" aria-expanded="true"
                         aria-controls="certificate-collapseTwo">
-                        <img src="/IMAGE/certificate.png" alt=""> Create Certificate
+                        <span class="material-symbols-outlined">
+                          new_window
+                          </span>Create Certificate
                       </p>
                     </h2>
                     <div id="certificate-collapseTwo" class="accordion-collapse collapse ">
@@ -142,7 +162,9 @@
                     <h2 class="accordion-header">
                       <p class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#user-collapseThree" aria-expanded="false" aria-controls="user-collapseThree">
-                        <i class="fa-solid fa-user"></i>User
+                        <span class="material-symbols-outlined">
+                          person
+                          </span>User
                       </p>
                     </h2>
                     <div id="user-collapseThree" class="accordion-collapse collapse">
@@ -153,6 +175,12 @@
                     </div>
                   </div>
                 </li>
+                <button class="logout">
+                  <span class="material-symbols-outlined">
+                    logout
+                    </span>Logout
+                </button>
+                
               </ul>
             </div>
           </div>
@@ -166,7 +194,6 @@
           Application <span>> Add Product</span>
         </div>
         <form action="" class="form-cm">
-
           <div class="row mb-2">
             <div class="mb-3 col-md-6">
               <label for="" class="form-label cm">Name of Product</label>
@@ -183,177 +210,32 @@
           </div>
           <div class="row">
             <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Application number and date</label>
-              <input type="date" class="form-control cm" placeholder="Enter Application number and date">
-            </div>
-            <div class="mb-3 col-md-6">
               <label for="" class="form-label cm">Form of Product</label>
               <input type="text" class="form-control cm" placeholder="Enter Form of Product">
             </div>
-          </div>
-          <div class="row">
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Application Form</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Yes</option>
-                <option value="3">No</option>
-              </select>
-            </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Checklist</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Yes</option>
-                <option value="3">No</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Firm registration Number</label>
-              <input type="text" class="form-control cm" placeholder="Enter Firm registration Number">
-            </div>
             <div class="mb-3 col-md-6">
               <label for="" class="form-label cm">Dose specified</label>
-              <input type="text" class="form-control cm" placeholder="Enter Dose specified">
-            </div>
-          </div>
-          <div class="row">
-            <div class="mb-3 col-md-12">
-              <label for="" class="form-label cm">Name of Importer</label>
-              <input type="text" class="form-control cm" placeholder="Enter Name of Importer">
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="1" selected disabled>Select</option>
+                <option value="2">Database</option>
+                <option value="3">Database</option>
+              </select>
             </div>
             <div class="add-field-btn">
-              <a href="importer.html"><i class="fa-solid fa-plus"></i> Add </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="mb-3 col-md-12">
-              <label for="" class="form-label cm">Address of Importer</label>
-              <input type="text" class="form-control cm" placeholder="Enter Address of Importer">
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Name and Address of Marketer</label>
-              <input type="text" class="form-control cm" placeholder="Enter Name and Address of Marketer">
-            </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Countery of Marketer</label>
-              <input type="text" class="form-control cm" placeholder="Enter Countery of Marketer">
+              <a href="adddose.html"><i class="fa-solid fa-plus"></i> Add </a>
             </div>
           </div>
           <div class="row">
             <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Licence authority name and address</label>
-              <input type="text" class="form-control cm" placeholder="Enter Licence authority name and address">
-            </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Countery of licensing</label>
-              <input type="text" class="form-control cm" placeholder="Enter Countery of licencing">
-            </div>
-          </div>
-          <div class="row">
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Dietary supplement or similar</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Mentioned</option>
-                <option value="3">Not Mentioned</option>
-              </select>
-            </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Active ingredients analysis method</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Mentioned</option>
-                <option value="3">Not Mentioned</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Product registration number</label>
-              <input type="text" class="form-control cm" placeholder="Enter Product registration Number">
-            </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Statement of Not for medical use</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Stated</option>
-                <option value="3">Not Stated</option>
-              </select>
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Date of Grant</label>
-              <input type="date" class="form-control cm" placeholder="Enter Date of Grant">
-            </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">This product is not intended to treat, cure or diagnose</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Mentioned</option>
-                <option value="3">Not Mentioned</option>
-              </select>
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Health Claim</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Allowed</option>
-                <option value="3">Not Allowed</option>
-              </select>
-            </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Nutritional Claim</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Verified</option>
-                <option value="3">Not Verified</option>
-              </select>
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="mb-3 col-md-12">
-              <label for="" class="form-label cm">Expirydate Claim</label>
-              <input type="text" class="form-control cm" placeholder="Enter Expirydate Claim">
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Process flow chart</label>
-              <input type="text" class="form-control cm" placeholder="Enter Process flow chart">
-            </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Name and address of laboratory</label>
-              <input type="text" class="form-control cm" placeholder="Enter Name and address of laboratory">
-            </div>
-          </div>
-          <div class="row">
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Free sale certificate</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Attached</option>
-                <option value="3">Not Attached</option>
-              </select>
+              <label for="" class="form-label cm">Size of pack</label>
+              <input type="text" class="form-control cm" placeholder="Enter Size of pack ">
             </div>
             <div class="mb-3 col-md-6">
               <label for="" class="form-label cm">Label of product</label>
               <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Provided</option>
-                <option value="3">Not Provided</option>
+                <option value="" selected disabled>Select</option>
+                <option value="Provided">Provided</option>
+                <option value="Not Provided">Not Provided</option>
               </select>
             </div>
           </div>
@@ -361,54 +243,216 @@
             <div class="mb-3 col-md-6">
               <label for="" class="form-label cm">Product specification</label>
               <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Provided</option>
-                <option value="3">Not Provided</option>
+                <option value="" selected disabled>Select</option>
+                <option value="Provided">Provided</option>
+                <option value="Not Provided">Not Provided</option>
               </select>
             </div>
             <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Product flow chart</label>
+              <label for="" class="form-label cm">Product registration certificate</label>
               <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Attached</option>
-                <option value="3">Not Attached</option>
+                <option value="" selected disabled>Select</option>
+                <option value="Provided">Provided</option>
+                <option value="Not Provided">Not Provided</option>
               </select>
             </div>
-
+          </div>
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">Health Claim</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="1" selected disabled>Select</option>
+                <option value="Allowed">Allowed</option>
+                <option value="Not Allowed">Not Allowed</option>
+              </select>
+            </div>
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">Nutritional Claim</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="" selected disabled>Select</option>
+                <option value="Verified">Verified</option>
+                <option value="Not Verified">Not Verified</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">Expirydate Claim</label>
+              <input type="text" class="form-control cm" placeholder="Enter Expirydate Claim">
+            </div>
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">Statement of Not for medical use</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="" selected disabled>Select</option>
+                <option value="Stated">Stated</option>
+                <option value="Not Stated">Not Stated</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">This product is not intended to treat, cure or diagnose</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="" selected disabled>Select</option>
+                <option value="Mentioned">Mentioned</option>
+                <option value="Not Mentioned">Not Mentioned</option>
+              </select>
+            </div>
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">Dietary supplement or similar</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="" selected disabled>Select</option>
+                <option value="Mentioned">Mentioned</option>
+                <option value="Not Mentioned">Not Mentioned</option>
+              </select>
+            </div>
+           
           </div>
           <div class="row">
             <div class="mb-3 col-md-6">
               <label for="" class="form-label cm">Specification rational</label>
               <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Mentioned</option>
-                <option value="3">Not Mentioned</option>
+                <option value="" selected disabled>Select</option>
+                <option value="Mentioned">Mentioned</option>
+                <option value="Not Mentioned">Not Mentioned</option>
               </select>
             </div>
             <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Authorization letter</label>
+              <label for="" class="form-label cm">Active ingredients analysis method</label>
               <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Provided and attached</option>
-                <option value="3">Not Provided</option>
+                <option value="" selected disabled>Select</option>
+                <option value="Mentioned">Mentioned</option>
+                <option value="Not Mentioned">Not Mentioned</option>
               </select>
             </div>
           </div>
           <div class="row">
             <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">GMP certificate validity upto</label>
-              <input type="date" class="form-control cm" placeholder="Select GMP certificate validity upto">
-
-            </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">GMP certificate</label>
+              <label for="" class="form-label cm">Process flow chart</label>
               <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Attached</option>
-                <option value="3">Not Attached</option>
+                <option value="" selected disabled>Select</option>
+                <option value="Attached">Attached</option>
+                <option value="Not Attached">Not Attached</option>
               </select>
             </div>
           </div>
+          <div class="row">
+            <div class="mb-3 col-md-4">
+              <label for="" class="form-label cm">GMP certificate</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="" selected disabled>Select</option>
+                <option value="Attached">Attached</option>
+                <option value="Not Attached">Not Attached</option>
+              </select>
+            </div>
+            <div class="mb-3 col-md-4">
+              <label for="" class="form-label cm">GMP certificate validity upto</label>
+              <input type="date" class="form-control cm" placeholder="Select GMP certificate validity upto">
+            </div>
+            <div class="mb-3 col-md-4">
+              <label for="" class="form-label cm">GMP certifing agency</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="1" selected disabled>Select</option>
+                <option value="2">database</option>
+                <option value="3">database</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 col-md-4">
+              <label for="" class="form-label cm">COA inhouse</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="" selected disabled>Select</option>
+                <option value="Attached">Attached</option>
+                <option value="Not Attached">Not Attached</option>
+              </select>
+            </div>
+            <div class="mb-3 col-md-4">
+              <label for="" class="form-label cm">COA thirdparty</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="1" selected disabled>Select</option>
+                <option value="Attached">Attached</option>
+                <option value="Not Attached">Not Attached</option>
+              </select>
+            </div>
+            <div class="mb-3 col-md-4">
+              <label for="" class="form-label cm">COA Product Standard</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="" selected disabled>Select</option>
+                <option value="Compiles">Compiles</option>
+                <option value="Not Compiles">Not Compiles</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">Free sale certificate</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="" selected disabled>Select</option>
+                <option value="Attached">Attached</option>
+                <option value="Not Attached">Not Attached</option>
+              </select>
+            </div>
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">Authorization letter</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="" selected disabled>Select</option>
+                <option value="Provided and Attached">Provided and attached</option>
+                <option value="Not Provided">Not Provided</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 col-md-12">
+              <label for="" class="form-label cm">Composition</label>
+              <select class="form-select kit-form-control multipleselect" multiple="multiple"
+                aria-label="Default select example">
+                <option value="2">India</option>
+                <option value="3">Nepal</option>
+                <option value="4">USA</option>
+                <option value="5">China</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">Name of Importer</label>
+              <input type="text" class="form-control cm" placeholder="Enter Name of Importer">
+              <div class="add-field-btn mt-3">
+                <a href="importer.html"><i class="fa-solid fa-plus"></i> Add </a>
+              </div>
+            </div>
+            
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">Name of Manufacture</label>
+              <input type="text" class="form-control cm" placeholder="Enter Name of Manufacture">
+              <div class="add-field-btn mt-3">
+                <a href="manufacturing.html"><i class="fa-solid fa-plus"></i> Add </a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">Lab</label>
+              <input type="text" class="form-control cm" placeholder="Enter Name of Lab">
+            </div>
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">Capital of firm in RS.</label>
+              <input type="number" class="form-control cm" placeholder="Enter Capital of firm in RS.">
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <label for="" class="form-label cm">Overall opinion</label>
+              <select class="form-select kit-form-control" aria-label="Default select example">
+                <option value="1" selected disabled>Select</option>
+                <option value="Recommend for approval">Recommend for approval</option>
+                <option value="Not Recommend for approval">Not Recommend for approval</option>
+              </select>
+            </div>
+          </div>
+
           <div class="row">
             <div class="mb-3 col-md-6">
               <label for="" class="form-label cm">Renew valid till</label>
@@ -443,22 +487,8 @@
             </div>
           </div>
           <div class="row">
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Product registration certificate</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Provided</option>
-                <option value="3">Not Provided</option>
-              </select>
-            </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Overall opinion</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Recommend for approval</option>
-                <option value="3">Not Recommend for approval</option>
-              </select>
-            </div>
+
+
           </div>
           <div class="row">
             <div class="mb-3 col-md-6">
@@ -483,27 +513,10 @@
             </div>
           </div>
           <div class="row">
-            <div class="mb-3 col-md-12">
-              <label for="" class="form-label cm">Composition</label>
-              <select class="form-select kit-form-control multipleselect" multiple="multiple"
-                aria-label="Default select example">
-                <!-- <option value="1" selected disabled>Select</option> -->
-                <option value="2">India</option>
-                <option value="3">Nepal</option>
-                <option value="4">USA</option>
-                <option value="5">China</option>
-              </select>
 
-            </div>
           </div>
           <div class="row">
-            <div class="mb-3 col-md-12">
-              <label for="" class="form-label cm">Name of Manufacture</label>
-              <input type="text" class="form-control cm" placeholder="Enter Name of Manufacture">
-            </div>
-            <div class="add-field-btn">
-              <a href="manufacturing.html"><i class="fa-solid fa-plus"></i> Add </a>
-            </div>
+
           </div>
           <div class="row">
             <div class="mb-3 col-md-6">
@@ -517,14 +530,7 @@
               </select>
 
             </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">COA inhouse</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Attached</option>
-                <option value="3">Not Attached</option>
-              </select>
-            </div>
+
           </div>
           <div class="row">
             <div class="mb-3 col-md-6">
@@ -532,14 +538,7 @@
               <input type="number" class="form-control cm" placeholder="Enter Manufacturing Lic No.">
 
             </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">COA thirdparty</label>
-              <select class="form-select kit-form-control" aria-label="Default select example">
-                <option value="1" selected disabled>Select</option>
-                <option value="2">Attached</option>
-                <option value="3">Not Attached</option>
-              </select>
-            </div>
+
           </div>
           <div class="row">
             <div class="mb-3 col-md-6">
@@ -562,10 +561,7 @@
               <input type="date" class="form-control cm" placeholder="Select Certificate Validity from">
 
             </div>
-            <div class="mb-3 col-md-6">
-              <label for="" class="form-label cm">Size of pack</label>
-              <input type="text" class="form-control cm" placeholder="Enter Size of pack ">
-            </div>
+
           </div>
           <div class="row">
             <div class="mb-3 col-md-6">
